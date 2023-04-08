@@ -18,7 +18,8 @@ cloudinary.config({
 connectDB();
 
 app.use(cors({
-     origin:"*",
+     origin: "*",
+     credentials: true,
 }));
 app.use(express.json());
 app.use(
